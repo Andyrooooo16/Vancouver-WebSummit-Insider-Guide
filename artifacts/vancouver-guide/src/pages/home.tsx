@@ -4,6 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, ExternalLink, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const img = (name: string) => `${base}/images/${name}`;
+
 export default function Home() {
   const splurge = sortByCuisine(picks.filter(p => p.category === "Eat & Drink" && p.tier === "splurge"));
   const casual = sortByCuisine(picks.filter(p => p.category === "Eat & Drink" && p.tier === "casual"));
@@ -18,14 +21,14 @@ export default function Home() {
       {/* Hero */}
       <section className="relative h-[90vh] min-h-[600px] w-full flex items-end justify-center overflow-hidden pb-24">
         <div className="absolute inset-0 w-full h-full">
-          <img src="/images/hero.png" alt="Vancouver skyline at golden hour" className="w-full h-full object-cover" />
+          <img src={img("hero.png")} alt="Vancouver skyline at golden hour" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
             <div className="mb-8 flex justify-center">
               <img
-                src="/images/websummit.png"
+                src={img("websummit.png")}
                 alt="Web Summit Vancouver"
                 className="h-16 md:h-20 w-auto rounded-xl shadow-lg"
               />
@@ -48,7 +51,7 @@ export default function Home() {
           <SectionHeader
             title="Eat & Drink"
             description="From a quick bite between sessions to the finest Pacific Northwest dining. All walk times from Vancouver Convention Centre."
-            image="/images/eat.png"
+            image={img("eat.png")}
             imageAlt="Moody elegant dining room"
           />
 
@@ -78,7 +81,7 @@ export default function Home() {
           <SectionHeader
             title="Coffee"
             description="The fuel. Vancouver takes its roasting seriously — here are the best spots to recharge."
-            image="/images/coffee.png"
+            image={img("coffee.png")}
             imageAlt="Warm artisan coffee shop"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -91,7 +94,7 @@ export default function Home() {
           <SectionHeader
             title="Things to Do"
             description="Got a spare hour? Step out of the convention centre and see what makes Vancouver worth moving to."
-            image="/images/do.png"
+            image={img("do.png")}
             imageAlt="Lush green seawall"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -104,7 +107,7 @@ export default function Home() {
           <SectionHeader
             title="Nightlife & After Hours"
             description="Keep the energy going. Great spots to continue conversations with colleagues, new friends, and potential collaborators."
-            image="/images/nightlife.png"
+            image={img("nightlife.png")}
             imageAlt="Moody cocktail bar"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -116,7 +119,7 @@ export default function Home() {
         <section className="bg-secondary text-secondary-foreground rounded-3xl overflow-hidden shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-5">
             <div className="lg:col-span-2 h-64 lg:h-auto">
-              <img src="/images/tips.png" alt="Vancouver urban transit" className="w-full h-full object-cover" />
+              <img src={img("tips.png")} alt="Vancouver urban transit" className="w-full h-full object-cover" />
             </div>
             <div className="lg:col-span-3 p-8 md:p-16">
               <h2 className="text-4xl font-serif mb-8 text-primary-foreground">Tips from a Local</h2>
@@ -137,7 +140,7 @@ export default function Home() {
           <section className="flex flex-col md:flex-row items-center gap-10 md:gap-16 border-t border-border pt-16">
             <div className="shrink-0">
               <img
-                src="/images/andrew.png"
+                src={img("andrew.png")}
                 alt="Andrew Feng"
                 data-testid="img-andrew"
                 className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top shadow-lg ring-4 ring-border/30"
