@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Q2x9UtG6NGAht_xzdmr3H"
+uri = "file://artifacts/vancouver-guide/public/images/hero.png"
+type = "image"
+title = "Vancouver skyline at golden hour"
+
+[[generated]]
+id = "o_0J4Kl2k5kHYogPXuQA0"
+uri = "file://artifacts/vancouver-guide/public/images/eat.png"
+type = "image"
+title = "Elegant moody restaurant interior"
+
+[[generated]]
+id = "4s70Uh4Qj1mgBaOitZa3K"
+uri = "file://artifacts/vancouver-guide/public/images/coffee.png"
+type = "image"
+title = "Warm artisan coffee shop"
+
+[[generated]]
+id = "FrEo7Rv7AHo-jmX91Tmbg"
+uri = "file://artifacts/vancouver-guide/public/images/do.png"
+type = "image"
+title = "Lush green seawall path"
+
+[[generated]]
+id = "5gyyOpGr5ZsX3qB55OgDs"
+uri = "file://artifacts/vancouver-guide/public/images/nightlife.png"
+type = "image"
+title = "Moody upscale cocktail bar"
+
+[[generated]]
+id = "82piuTgWbTRgAI4gwHB22"
+uri = "file://artifacts/vancouver-guide/public/images/tips.png"
+type = "image"
+title = "Urban street photography vancouver"

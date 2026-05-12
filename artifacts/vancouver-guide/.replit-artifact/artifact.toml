@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Vancouver Local's Guide"
+version = "1.0.0"
+id = "artifacts/vancouver-guide"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22403
+
+[services.development]
+run = "pnpm --filter @workspace/vancouver-guide run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/vancouver-guide", "run", "build" ]
+publicDir = "artifacts/vancouver-guide/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22403"
+BASE_PATH = "/"
