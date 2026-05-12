@@ -39,13 +39,13 @@ export const picks: Pick[] = [
     id: "dovetail",
     name: "Dovetail Restaurant",
     description: "A quietly exceptional neighbourhood restaurant serving refined, ingredient-driven Pacific Northwest cuisine. Understated room, remarkable cooking — the kind of place locals guard jealously.",
-    neighbourhood: "North Vancouver",
-    walkTime: "15 min via SeaBus",
+    neighbourhood: "Yaletown",
+    walkTime: "18 min from VCC",
     category: "Eat & Drink",
     cuisine: "Pacific Northwest",
     tier: "splurge",
     url: "https://www.dovetailrestaurant.ca/",
-    mapsUrl: mapsDir("Dovetail+Restaurant,+24+Lonsdale+Ave,+North+Vancouver,+BC")
+    mapsUrl: mapsDir("Dovetail+Restaurant,+Yaletown,+Vancouver,+BC")
   },
   {
     id: "hawsworth",
@@ -128,7 +128,7 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Steakhouse",
     tier: "splurge",
-    url: "https://www.glowbalgroup.com/black-blue/",
+    url: "https://blackandbluesteakhouse.ca/vancouver-home/",
     mapsUrl: mapsDir("Black+%2B+Blue,+1032+Alberni+St,+Vancouver,+BC")
   },
   {
@@ -218,7 +218,7 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Sandwiches",
     tier: "quick-bite",
-    url: "https://www.meatandbread.ca",
+    url: "https://www.meatandbread.com/",
     mapsUrl: mapsDir("Meat+and+Bread,+370+Cambie+St,+Vancouver,+BC")
   },
 
