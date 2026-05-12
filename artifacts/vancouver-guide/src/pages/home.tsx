@@ -215,19 +215,21 @@ function PickCard({ pick, index, compact = false }: { pick: Pick; index: number;
       transition={{ duration: 0.45, delay: index * 0.06, ease: "easeOut" }}
       className="h-full"
     >
-      <a
-        href={pick.url}
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         data-testid={`card-pick-${pick.id}`}
-        className="group relative bg-card hover:bg-muted/40 border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 h-full flex flex-col cursor-pointer"
+        className="group relative bg-card border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 h-full flex flex-col"
       >
-        <div className="flex items-start justify-between gap-2 mb-2">
+        <a
+          href={pick.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-start justify-between gap-2 mb-2 hover:text-primary transition-colors"
+        >
           <h3 className={`font-serif text-foreground group-hover:text-primary transition-colors leading-tight ${compact ? "text-xl" : "text-2xl"}`}>
             {pick.name}
           </h3>
           <ExternalLink className="w-4 h-4 text-muted-foreground/30 group-hover:text-primary transition-colors shrink-0 mt-1" />
-        </div>
+        </a>
 
         {pick.cuisine && (
           <span className="text-[11px] uppercase tracking-widest text-primary/70 font-medium mb-3 block">{pick.cuisine}</span>
@@ -238,16 +240,23 @@ function PickCard({ pick, index, compact = false }: { pick: Pick; index: number;
         </p>
 
         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground mt-auto">
-          <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
+          <a
+            href={pick.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid={`map-link-${pick.id}`}
+            onClick={e => e.stopPropagation()}
+            className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50 hover:border-primary/40 hover:text-primary hover:bg-primary/5 transition-colors"
+          >
             <MapPin className="w-3 h-3 text-primary" />
             <span>{pick.neighbourhood}</span>
-          </div>
+          </a>
           <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
             <Clock className="w-3 h-3 text-primary" />
             <span>{pick.walkTime}</span>
           </div>
         </div>
-      </a>
+      </div>
     </motion.div>
   );
 }

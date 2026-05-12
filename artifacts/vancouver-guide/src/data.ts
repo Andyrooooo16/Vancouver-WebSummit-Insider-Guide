@@ -11,6 +11,12 @@ export interface Pick {
   cuisine?: string;
   tier?: Tier;
   url: string;
+  mapsUrl: string;
+}
+
+const VCC = "Vancouver+Convention+Centre,+1055+Canada+Pl,+Vancouver,+BC";
+function mapsDir(destination: string) {
+  return `https://www.google.com/maps/dir/${VCC}/${destination}/`;
 }
 
 export const picks: Pick[] = [
@@ -26,7 +32,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Pacific Northwest",
     tier: "splurge",
-    url: "https://botanistrestaurant.com"
+    url: "https://botanistrestaurant.com",
+    mapsUrl: mapsDir("Botanist+Restaurant,+1038+Canada+Pl,+Vancouver,+BC")
   },
   {
     id: "dovetail",
@@ -37,7 +44,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Pacific Northwest",
     tier: "splurge",
-    url: "https://www.dovetailrestaurant.ca/"
+    url: "https://www.dovetailrestaurant.ca/",
+    mapsUrl: mapsDir("Dovetail+Restaurant,+24+Lonsdale+Ave,+North+Vancouver,+BC")
   },
   {
     id: "hawsworth",
@@ -48,7 +56,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Canadian",
     tier: "splurge",
-    url: "https://hawksworthrestaurant.com"
+    url: "https://hawksworthrestaurant.com",
+    mapsUrl: mapsDir("Hawksworth+Restaurant,+801+W+Georgia+St,+Vancouver,+BC")
   },
   {
     id: "st-lawrence",
@@ -59,7 +68,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "French-Canadian",
     tier: "splurge",
-    url: "https://www.stlawrencerestaurant.com"
+    url: "https://www.stlawrencerestaurant.com",
+    mapsUrl: mapsDir("St.+Lawrence+Restaurant,+269+Powell+St,+Vancouver,+BC")
   },
   {
     id: "ask-for-luigi",
@@ -70,18 +80,20 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Italian",
     tier: "splurge",
-    url: "https://www.askforluigi.com"
+    url: "https://www.askforluigi.com",
+    mapsUrl: mapsDir("Ask+for+Luigi,+305+Alexander+St,+Vancouver,+BC")
   },
   {
     id: "rob-badamatti",
-    name: "Rob Badamatti",
+    name: "Robba Da Matti",
     description: "Superb Italian cooking with an emphasis on handmade pasta and wood-fired dishes. A beautiful room and the kind of Italian food that makes you forget every other Italian restaurant.",
-    neighbourhood: "Coal Harbour",
-    walkTime: "5 min from VCC",
+    neighbourhood: "Downtown",
+    walkTime: "10 min from VCC",
     category: "Eat & Drink",
     cuisine: "Italian",
     tier: "splurge",
-    url: "https://robbadamatti.com/"
+    url: "https://robbadamatti.com/",
+    mapsUrl: mapsDir("Robba+Da+Matti,+Vancouver,+BC")
   },
   {
     id: "miku",
@@ -92,7 +104,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Japanese",
     tier: "splurge",
-    url: "https://mikurestaurant.com"
+    url: "https://mikurestaurant.com",
+    mapsUrl: mapsDir("Miku+Restaurant,+200+Granville+St,+Vancouver,+BC")
   },
   {
     id: "the-keg",
@@ -103,7 +116,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Steakhouse",
     tier: "splurge",
-    url: "https://www.kegsteakhouse.com"
+    url: "https://www.kegsteakhouse.com",
+    mapsUrl: mapsDir("The+Keg+Steakhouse,+1011+Mainland+St,+Vancouver,+BC")
   },
   {
     id: "black-and-blue",
@@ -114,7 +128,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Steakhouse",
     tier: "splurge",
-    url: "https://www.glowbalgroup.com/black-blue/"
+    url: "https://www.glowbalgroup.com/black-blue/",
+    mapsUrl: mapsDir("Black+%2B+Blue,+1032+Alberni+St,+Vancouver,+BC")
   },
   {
     id: "gotham",
@@ -125,7 +140,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Steakhouse",
     tier: "splurge",
-    url: "https://www.gothamsteakhouse.com"
+    url: "https://www.gothamsteakhouse.com",
+    mapsUrl: mapsDir("Gotham+Steakhouse,+615+Seymour+St,+Vancouver,+BC")
   },
 
   // ── Eat & Drink — Casual ───────────────────────────────────────────────────
@@ -139,18 +155,20 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Canadian",
     tier: "casual",
-    url: "https://www.cactusclubcafe.com"
+    url: "https://www.cactusclubcafe.com",
+    mapsUrl: mapsDir("Cactus+Club+Cafe,+1199+W+Hastings+St,+Vancouver,+BC")
   },
   {
     id: "earls",
     name: "Earls Kitchen + Bar",
     description: "A Vancouver-born chain that actually punches above its weight. Great for a group — diverse menu, strong cocktail list, and reliably solid execution across the board.",
-    neighbourhood: "Downtown",
-    walkTime: "14 min from VCC",
+    neighbourhood: "English Bay",
+    walkTime: "18 min from VCC",
     category: "Eat & Drink",
     cuisine: "Canadian",
     tier: "casual",
-    url: "https://www.earls.ca"
+    url: "https://www.earls.ca",
+    mapsUrl: mapsDir("Earls+Kitchen+Bar,+1185+Robson+St,+Vancouver,+BC")
   },
 
   // ── Eat & Drink — Quick Bite ───────────────────────────────────────────────
@@ -158,13 +176,14 @@ export const picks: Pick[] = [
   {
     id: "tacofino",
     name: "Tacofino",
-    description: "A Vancouver institution that started as a food truck in Tofino. Fresh, flavourful tacos and burritos that punch way above their price point. Perfect between sessions.",
-    neighbourhood: "Hastings",
+    description: "A Vancouver institution that started as a food truck in Tofino. Fresh, flavourful tacos and burritos that punch way above their price point. The Gastown location is closest.",
+    neighbourhood: "Gastown",
     walkTime: "12 min from VCC",
     category: "Eat & Drink",
     cuisine: "Mexican",
     tier: "quick-bite",
-    url: "https://www.tacofino.com"
+    url: "https://www.tacofino.com",
+    mapsUrl: mapsDir("Tacofino,+15+W+Cordova+St,+Vancouver,+BC")
   },
   {
     id: "japadog",
@@ -175,7 +194,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Japanese Street Food",
     tier: "quick-bite",
-    url: "https://www.japadog.com"
+    url: "https://www.japadog.com",
+    mapsUrl: mapsDir("Japadog,+530+Robson+St,+Vancouver,+BC")
   },
   {
     id: "purebread",
@@ -186,18 +206,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Bakery",
     tier: "quick-bite",
-    url: "https://www.purebread.ca"
-  },
-  {
-    id: "noodle-box",
-    name: "Noodle Box",
-    description: "Fast, filling noodle boxes done right. Great for a quick solo lunch when you have 30 minutes and need something hot and genuinely satisfying.",
-    neighbourhood: "Downtown",
-    walkTime: "10 min from VCC",
-    category: "Eat & Drink",
-    cuisine: "Asian",
-    tier: "quick-bite",
-    url: "https://noodlebox.ca"
+    url: "https://www.purebread.ca",
+    mapsUrl: mapsDir("Purebread,+233+Abbott+St,+Vancouver,+BC")
   },
   {
     id: "meat-and-bread",
@@ -208,18 +218,8 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Sandwiches",
     tier: "quick-bite",
-    url: "https://www.meatandbread.ca"
-  },
-  {
-    id: "save-on-meats",
-    name: "Save-On Meats",
-    description: "A classic Vancouver diner on Hastings with hearty, no-fuss comfort food at a very fair price. Breakfast all day, solid burgers, and a genuine slice of the city.",
-    neighbourhood: "Hastings",
-    walkTime: "15 min from VCC",
-    category: "Eat & Drink",
-    cuisine: "Diner",
-    tier: "quick-bite",
-    url: "https://www.saveonmeats.ca"
+    url: "https://www.meatandbread.ca",
+    mapsUrl: mapsDir("Meat+and+Bread,+370+Cambie+St,+Vancouver,+BC")
   },
 
   // ── Coffee ─────────────────────────────────────────────────────────────────
@@ -231,16 +231,18 @@ export const picks: Pick[] = [
     neighbourhood: "Gastown",
     walkTime: "12 min from VCC",
     category: "Coffee",
-    url: "https://revolvercoffee.ca"
+    url: "https://revolvercoffee.ca",
+    mapsUrl: mapsDir("Revolver+Coffee,+325+Cambie+St,+Vancouver,+BC")
   },
   {
     id: "nemesis",
     name: "Nemesis Coffee",
-    description: "Excellent pour-overs and some of the best pastries in the city. Bright, energetic, and a great morning launch pad.",
-    neighbourhood: "Gastown",
-    walkTime: "13 min from VCC",
+    description: "Excellent pour-overs and some of the best pastries in the city. The W Hastings location is the closest to VCC — bright, energetic, and a great morning launch pad.",
+    neighbourhood: "Downtown",
+    walkTime: "10 min from VCC",
     category: "Coffee",
-    url: "https://nemesiscoffee.com"
+    url: "https://nemesiscoffee.com",
+    mapsUrl: mapsDir("Nemesis+Coffee,+302+W+Hastings+St,+Vancouver,+BC")
   },
   {
     id: "elysian",
@@ -249,34 +251,38 @@ export const picks: Pick[] = [
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Coffee",
-    url: "https://elysiancoffee.com"
+    url: "https://elysiancoffee.com",
+    mapsUrl: mapsDir("Elysian+Coffee,+Vancouver,+BC")
+  },
+  {
+    id: "angus-t",
+    name: "Angus T",
+    description: "A warm, welcoming neighbourhood café with thoughtfully prepared coffee and a relaxed vibe. A great spot to settle in and recharge between sessions.",
+    neighbourhood: "Downtown",
+    walkTime: "12 min from VCC",
+    category: "Coffee",
+    url: "https://www.angust.com/",
+    mapsUrl: mapsDir("Angus+T+Coffee,+Vancouver,+BC")
   },
   {
     id: "analog",
     name: "Analog Coffee",
-    description: "A beloved neighbourhood coffee shop on Davie Street with serious craft and a relaxed, welcoming vibe. Great single-origin options and a spot where you can actually settle in.",
+    description: "A beloved West End café on Davie Street with serious craft and a relaxed, welcoming vibe. Great single-origin options and a spot where you can actually settle in.",
     neighbourhood: "West End",
     walkTime: "18 min from VCC",
     category: "Coffee",
-    url: "https://www.analogcoffee.ca"
+    url: "https://www.analogcoffee.ca",
+    mapsUrl: mapsDir("Analog+Coffee,+740+Davie+St,+Vancouver,+BC")
   },
   {
     id: "kafkas",
     name: "Kafka's Coffee",
-    description: "Approachable, consistent, and comfortable. They take their roasting seriously without being precious about it. A local's everyday spot.",
+    description: "Approachable, consistent, and comfortable. They take their roasting seriously without being precious about it. The W Hastings location is the closest to VCC.",
     neighbourhood: "Gastown",
     walkTime: "14 min from VCC",
     category: "Coffee",
-    url: "https://kafkascoffee.ca"
-  },
-  {
-    id: "matchstick",
-    name: "Matchstick Coffee",
-    description: "Outstanding roaster with a beautifully designed space. If you care about where your beans come from, this is the answer. Exceptional filter coffee.",
-    neighbourhood: "Chinatown",
-    walkTime: "18 min from VCC",
-    category: "Coffee",
-    url: "https://www.matchstick.ca"
+    url: "https://kafkascoffee.ca",
+    mapsUrl: mapsDir("Kafka%27s+Coffee,+124+W+Hastings+St,+Vancouver,+BC")
   },
 
   // ── Things to Do ───────────────────────────────────────────────────────────
@@ -288,16 +294,18 @@ export const picks: Pick[] = [
     neighbourhood: "Coal Harbour",
     walkTime: "0 min — starts at VCC",
     category: "Things to Do",
-    url: "https://www.google.com/maps/place/Coal+Harbour+Seawall"
+    url: "https://www.google.com/maps/place/Coal+Harbour+Seawall",
+    mapsUrl: "https://www.google.com/maps/place/Coal+Harbour+Seawall,+Vancouver,+BC/"
   },
   {
     id: "seabus",
     name: "SeaBus to Lonsdale Quay",
-    description: "Hop on the SeaBus at Canada Place (right outside VCC) for a 12-minute crossing to North Vancouver. The Lonsdale Quay Public Market is charming, the views back across the inlet are spectacular, and it's a genuinely lovely way to spend an hour.",
+    description: "Hop on the SeaBus at Canada Place (right outside VCC) for a 12-minute crossing to North Vancouver. The Lonsdale Quay Public Market is charming, the views back across the inlet are spectacular.",
     neighbourhood: "North Vancouver",
     walkTime: "0 min — boards at VCC",
     category: "Things to Do",
-    url: "https://www.translink.ca/rider-guide/transit-system/seabus"
+    url: "https://www.translink.ca/rider-guide/transit-system/seabus",
+    mapsUrl: mapsDir("Lonsdale+Quay+Public+Market,+123+Carrie+Cates+Ct,+North+Vancouver,+BC")
   },
   {
     id: "gastown-explore",
@@ -306,7 +314,8 @@ export const picks: Pick[] = [
     neighbourhood: "Gastown",
     walkTime: "10 min from VCC",
     category: "Things to Do",
-    url: "https://gastown.org"
+    url: "https://gastown.org",
+    mapsUrl: mapsDir("Gastown,+Vancouver,+BC")
   },
   {
     id: "stanley-park",
@@ -315,7 +324,8 @@ export const picks: Pick[] = [
     neighbourhood: "West End",
     walkTime: "15 min from VCC",
     category: "Things to Do",
-    url: "https://www.google.com/maps/place/Stanley+Park"
+    url: "https://www.google.com/maps/place/Stanley+Park",
+    mapsUrl: mapsDir("Stanley+Park,+Vancouver,+BC")
   },
   {
     id: "vancouver-art-gallery",
@@ -324,7 +334,8 @@ export const picks: Pick[] = [
     neighbourhood: "Downtown",
     walkTime: "12 min from VCC",
     category: "Things to Do",
-    url: "https://www.vanartgallery.bc.ca"
+    url: "https://www.vanartgallery.bc.ca",
+    mapsUrl: mapsDir("Vancouver+Art+Gallery,+750+Hornby+St,+Vancouver,+BC")
   },
   {
     id: "granville-island",
@@ -333,7 +344,8 @@ export const picks: Pick[] = [
     neighbourhood: "Granville Island",
     walkTime: "20 min walk + Aquabus",
     category: "Things to Do",
-    url: "https://granvilleisland.com"
+    url: "https://granvilleisland.com",
+    mapsUrl: mapsDir("Granville+Island+Public+Market,+1669+Johnston+St,+Vancouver,+BC")
   },
 
   // ── Nightlife & After Hours ────────────────────────────────────────────────
@@ -345,7 +357,8 @@ export const picks: Pick[] = [
     neighbourhood: "Coal Harbour",
     walkTime: "2 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://botanistrestaurant.com"
+    url: "https://botanistrestaurant.com",
+    mapsUrl: mapsDir("Botanist+Restaurant,+1038+Canada+Pl,+Vancouver,+BC")
   },
   {
     id: "bartholomew",
@@ -354,7 +367,8 @@ export const picks: Pick[] = [
     neighbourhood: "Gastown",
     walkTime: "10 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.bartholomewyvr.com"
+    url: "https://www.bartholomewyvr.com",
+    mapsUrl: mapsDir("Bartholomew,+Gastown,+Vancouver,+BC")
   },
   {
     id: "guilt-and-co",
@@ -363,7 +377,8 @@ export const picks: Pick[] = [
     neighbourhood: "Gastown",
     walkTime: "10 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.guiltandco.com"
+    url: "https://www.guiltandco.com",
+    mapsUrl: mapsDir("Guilt+%26+Co,+157+Alexander+St,+Vancouver,+BC")
   },
   {
     id: "keefer-bar",
@@ -372,7 +387,8 @@ export const picks: Pick[] = [
     neighbourhood: "Chinatown",
     walkTime: "18 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://thekeeferbar.com"
+    url: "https://thekeeferbar.com",
+    mapsUrl: mapsDir("The+Keefer+Bar,+135+Keefer+St,+Vancouver,+BC")
   },
   {
     id: "clough-club",
@@ -381,7 +397,8 @@ export const picks: Pick[] = [
     neighbourhood: "Gastown",
     walkTime: "12 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.cloughclub.com"
+    url: "https://www.cloughclub.com",
+    mapsUrl: mapsDir("Clough+Club,+Gastown,+Vancouver,+BC")
   },
   {
     id: "greta-yvr",
@@ -390,7 +407,8 @@ export const picks: Pick[] = [
     neighbourhood: "Granville Strip",
     walkTime: "12 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.gretabar.ca"
+    url: "https://www.gretabar.ca",
+    mapsUrl: mapsDir("Greta+Bar,+1178+Hamilton+St,+Vancouver,+BC")
   }
 ];
 
