@@ -92,7 +92,7 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Japanese",
     tier: "splurge",
-    url: "https://mikurestaurant.com/locations/vancouver/"
+    url: "https://mikurestaurant.com"
   },
   {
     id: "the-keg",
@@ -114,7 +114,7 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Steakhouse",
     tier: "splurge",
-    url: "https://www.glowbalgroup.com/blackandblue/"
+    url: "https://www.glowbalgroup.com/black-blue/"
   },
   {
     id: "gotham",
@@ -197,7 +197,29 @@ export const picks: Pick[] = [
     category: "Eat & Drink",
     cuisine: "Asian",
     tier: "quick-bite",
-    url: "https://www.noodlebox.ca"
+    url: "https://noodlebox.ca"
+  },
+  {
+    id: "meat-and-bread",
+    name: "Meat & Bread",
+    description: "A Gastown legend. They do one thing — the porchetta sandwich — and they do it better than anyone. The line moves fast. Absolutely worth it.",
+    neighbourhood: "Gastown",
+    walkTime: "14 min from VCC",
+    category: "Eat & Drink",
+    cuisine: "Sandwiches",
+    tier: "quick-bite",
+    url: "https://www.meatandbread.ca"
+  },
+  {
+    id: "save-on-meats",
+    name: "Save-On Meats",
+    description: "A classic Vancouver diner on Hastings with hearty, no-fuss comfort food at a very fair price. Breakfast all day, solid burgers, and a genuine slice of the city.",
+    neighbourhood: "Hastings",
+    walkTime: "15 min from VCC",
+    category: "Eat & Drink",
+    cuisine: "Diner",
+    tier: "quick-bite",
+    url: "https://www.saveonmeats.ca"
   },
 
   // ── Coffee ─────────────────────────────────────────────────────────────────
@@ -323,7 +345,7 @@ export const picks: Pick[] = [
     neighbourhood: "Coal Harbour",
     walkTime: "2 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://botanistrestaurant.com/bar"
+    url: "https://botanistrestaurant.com"
   },
   {
     id: "bartholomew",

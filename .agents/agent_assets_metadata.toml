@@ -36,3 +36,33 @@ id = "82piuTgWbTRgAI4gwHB22"
 uri = "file://artifacts/vancouver-guide/public/images/tips.png"
 type = "image"
 title = "Urban street photography vancouver"
+
+[[generated]]
+id = "1RmJzhz0w5fvtdmS1X1J8"
+uri = "file://attached_assets/generated_images/gastown_vancouver_restaurant_dining_6f1f.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ApnYtkD5qYlj8MRpEseVG"
+uri = "file://attached_assets/generated_images/vancouver_gastown_coffee_shop_3905.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "dvxfnnICTeioI3MHNmoq2"
+uri = "file://attached_assets/generated_images/stanley_park_seawall_vancouver_c9b2.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "kij9FQtqxwC-cgFmVajR5"
+uri = "file://attached_assets/generated_images/gastown_vancouver_at_night_5e4b.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "eZXzCEflmQXfN7kWWHTJG"
+uri = "file://attached_assets/generated_images/coal_harbour_vancouver_waterfront_ca28.png"
+type = "image"
+title = "generated_image"
