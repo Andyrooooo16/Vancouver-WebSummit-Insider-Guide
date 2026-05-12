@@ -103,7 +103,7 @@ export default function Home() {
         <section>
           <SectionHeader
             title="Nightlife & After Hours"
-            description="Where the conversations continue after the sun goes down."
+            description="Keep the energy going. Great spots to continue conversations with colleagues, new friends, and potential collaborators."
             image="/images/nightlife.png"
             imageAlt="Moody cocktail bar"
           />

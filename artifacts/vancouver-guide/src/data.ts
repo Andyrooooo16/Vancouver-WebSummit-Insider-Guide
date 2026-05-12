@@ -316,7 +316,7 @@ export const picks: Pick[] = [
     neighbourhood: "North Vancouver",
     walkTime: "Boards at VCC",
     category: "Things to Do",
-    url: "https://www.translink.ca/rider-guide/transit-system/seabus",
+    url: "https://lonsdalequay.com/",
     mapsUrl: mapsDir("Lonsdale+Quay+Public+Market,+123+Carrie+Cates+Ct,+North+Vancouver,+BC")
   },
   {
@@ -336,7 +336,7 @@ export const picks: Pick[] = [
     neighbourhood: "West End",
     walkTime: "15 min from VCC",
     category: "Things to Do",
-    url: "https://www.google.com/maps/place/Stanley+Park",
+    url: "https://vancouver.ca/parks-recreation-culture/stanley-park.aspx",
     mapsUrl: mapsDir("Stanley+Park,+Vancouver,+BC")
   },
   {
@@ -415,12 +415,12 @@ export const picks: Pick[] = [
   {
     id: "greta-yvr",
     name: "Greta YVR",
-    description: "A high energy bar and live music venue in the heart of Granville Street. Lively, loud, and exactly what you want when a conference day ends and you need to cut loose.",
-    neighbourhood: "Granville Strip",
+    description: "A high energy bar and live music venue in the heart of Gastown. Lively, loud, and exactly what you want when a conference day ends and you need to cut loose.",
+    neighbourhood: "Gastown",
     walkTime: "12 min from VCC",
     category: "Nightlife & After Hours",
     url: "https://gretabar.com/vancouver/",
-    mapsUrl: mapsDir("Greta+Bar,+1178+Hamilton+St,+Vancouver,+BC")
+    mapsUrl: mapsDir("Greta+Bar,+Gastown,+Vancouver,+BC")
   }
 ];
 
