@@ -26,7 +26,7 @@ export const picks: Pick[] = [
   {
     id: "botanist",
     name: "Botanist",
-    description: "Incredible Pacific Northwest cuisine inside the Fairmont Pacific Rim — practically attached to the convention centre. The cocktails are science experiments and the seafood is flawless.",
+    description: "Incredible Pacific Northwest cuisine inside the Fairmont Pacific Rim, practically attached to the convention centre. The cocktails are science experiments and the seafood is flawless.",
     neighbourhood: "Coal Harbour",
     walkTime: "2 min from VCC",
     category: "Eat & Drink",
@@ -38,7 +38,7 @@ export const picks: Pick[] = [
   {
     id: "dovetail",
     name: "Dovetail Restaurant",
-    description: "A quietly exceptional neighbourhood restaurant serving refined, ingredient-driven Pacific Northwest cuisine. Understated room, remarkable cooking — the kind of place locals guard jealously.",
+    description: "A quietly exceptional neighbourhood restaurant serving refined, ingredient driven Pacific Northwest cuisine. Understated room, remarkable cooking. The kind of place locals guard jealously.",
     neighbourhood: "Yaletown",
     walkTime: "18 min from VCC",
     category: "Eat & Drink",
@@ -62,11 +62,11 @@ export const picks: Pick[] = [
   {
     id: "st-lawrence",
     name: "St. Lawrence",
-    description: "Classic French-Canadian cuisine in a rustic, candlelit room. Rich, hearty, and completely unforgettable. Make a reservation — this one books up well in advance.",
+    description: "Classic French Canadian cuisine in a rustic, candlelit room. Rich, hearty, and completely unforgettable. Make a reservation; this one books up well in advance.",
     neighbourhood: "Japantown",
     walkTime: "22 min from VCC",
     category: "Eat & Drink",
-    cuisine: "French-Canadian",
+    cuisine: "French Canadian",
     tier: "splurge",
     url: "https://www.stlawrencerestaurant.com",
     mapsUrl: mapsDir("St.+Lawrence+Restaurant,+269+Powell+St,+Vancouver,+BC")
@@ -74,7 +74,7 @@ export const picks: Pick[] = [
   {
     id: "ask-for-luigi",
     name: "Ask for Luigi",
-    description: "Cozy, intimate, and always packed. Handmade pasta and family-style Italian done with genuine care. Worth the walk — or grab a cab.",
+    description: "Cozy, intimate, and always packed. Handmade pasta and family style Italian done with genuine care. Worth the walk. Or just grab a cab.",
     neighbourhood: "Railtown",
     walkTime: "20 min from VCC",
     category: "Eat & Drink",
@@ -86,7 +86,7 @@ export const picks: Pick[] = [
   {
     id: "rob-badamatti",
     name: "Robba Da Matti",
-    description: "Superb Italian cooking with an emphasis on handmade pasta and wood-fired dishes. A beautiful room and the kind of Italian food that makes you forget every other Italian restaurant.",
+    description: "Superb Italian cooking with an emphasis on handmade pasta and wood fired dishes. A beautiful room and the kind of Italian food that makes you forget every other Italian restaurant.",
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Eat & Drink",
@@ -98,7 +98,7 @@ export const picks: Pick[] = [
   {
     id: "miku",
     name: "Miku",
-    description: "Famous for Aburi (flame-seared) sushi. Book a window seat for stunning harbour and mountain views while you eat. A Vancouver institution.",
+    description: "Famous for Aburi (flame seared) sushi. Book a window seat for stunning harbour and mountain views while you eat. A Vancouver institution.",
     neighbourhood: "Waterfront",
     walkTime: "5 min from VCC",
     category: "Eat & Drink",
@@ -122,7 +122,7 @@ export const picks: Pick[] = [
   {
     id: "black-and-blue",
     name: "Black + Blue",
-    description: "A high-energy steakhouse and sushi bar on Alberni Street. Stunning room, incredible prime cuts, and an extensive wine program. A downtown institution for big nights out.",
+    description: "A high energy steakhouse and sushi bar on Alberni Street. Stunning room, incredible prime cuts, and an extensive wine program. A downtown institution for big nights out.",
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Eat & Drink",
@@ -134,7 +134,7 @@ export const picks: Pick[] = [
   {
     id: "gotham",
     name: "Gotham Steakhouse",
-    description: "Old-school glamour in a dramatic basement room on Seymour. Classic steakhouse vibes — big cuts, strong cocktails, and a room that makes every dinner feel like an occasion.",
+    description: "Old school glamour in a dramatic basement room on Seymour. Classic steakhouse vibes. Big cuts, strong cocktails, and a room that makes every dinner feel like an occasion.",
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Eat & Drink",
@@ -161,7 +161,7 @@ export const picks: Pick[] = [
   {
     id: "earls",
     name: "Earls Kitchen + Bar",
-    description: "A Vancouver-born chain that actually punches above its weight. Great for a group — diverse menu, strong cocktail list, and reliably solid execution across the board.",
+    description: "A Vancouver born chain that actually punches above its weight. Great for a group. Diverse menu, strong cocktail list, and reliably solid execution across the board.",
     neighbourhood: "English Bay",
     walkTime: "18 min from VCC",
     category: "Eat & Drink",
@@ -200,7 +200,7 @@ export const picks: Pick[] = [
   {
     id: "japadog",
     name: "Japadog",
-    description: "The iconic Vancouver hot dog elevated with Japanese toppings — teriyaki, oroshi, nori. Genuinely delicious and one of those only-in-Vancouver experiences.",
+    description: "The iconic Vancouver hot dog elevated with Japanese toppings: teriyaki, oroshi, nori. Genuinely delicious and one of those only in Vancouver experiences.",
     neighbourhood: "Downtown",
     walkTime: "8 min from VCC",
     category: "Eat & Drink",
@@ -212,7 +212,7 @@ export const picks: Pick[] = [
   {
     id: "purebread",
     name: "Purebread",
-    description: "Arguably the best bakery in Vancouver. Everything — from the chocolate things to the savoury scones — is outstanding. Go early, the good stuff disappears fast.",
+    description: "Arguably the best bakery in Vancouver. Everything is outstanding, from the chocolate things to the savoury scones. Go early; the good stuff disappears fast.",
     neighbourhood: "Gastown",
     walkTime: "14 min from VCC",
     category: "Eat & Drink",
@@ -224,7 +224,7 @@ export const picks: Pick[] = [
   {
     id: "meat-and-bread",
     name: "Meat & Bread",
-    description: "A Gastown legend. They do one thing — the porchetta sandwich — and they do it better than anyone. The line moves fast. Absolutely worth it.",
+    description: "A Gastown legend. They do one thing, the porchetta sandwich, and they do it better than anyone. The line moves fast. Absolutely worth it.",
     neighbourhood: "Gastown",
     walkTime: "14 min from VCC",
     category: "Eat & Drink",
@@ -239,7 +239,7 @@ export const picks: Pick[] = [
   {
     id: "revolver",
     name: "Revolver",
-    description: "A coffee purist's dream. Carefully sourced beans brewed with precision in a beautiful brick-walled Gastown space. Worth every step of the walk.",
+    description: "A coffee purist's dream. Carefully sourced beans brewed with precision in a beautiful brick walled Gastown space. Worth every step of the walk.",
     neighbourhood: "Gastown",
     walkTime: "12 min from VCC",
     category: "Coffee",
@@ -249,7 +249,7 @@ export const picks: Pick[] = [
   {
     id: "nemesis",
     name: "Nemesis Coffee",
-    description: "Excellent pour-overs and some of the best pastries in the city. The W Hastings location is the closest to VCC — bright, energetic, and a great morning launch pad.",
+    description: "Excellent pour overs and some of the best pastries in the city. The W Hastings location is the closest to VCC. Bright, energetic, and a great morning launch pad.",
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Coffee",
@@ -279,7 +279,7 @@ export const picks: Pick[] = [
   {
     id: "analog",
     name: "Analog Coffee",
-    description: "A beloved West End café on Davie Street with serious craft and a relaxed, welcoming vibe. Great single-origin options and a spot where you can actually settle in.",
+    description: "A beloved café in Yaletown with serious craft and a relaxed, welcoming vibe. Great single origin options and a spot where you can actually settle in.",
     neighbourhood: "Yaletown",
     walkTime: "18 min from VCC",
     category: "Coffee",
@@ -304,7 +304,7 @@ export const picks: Pick[] = [
     name: "Coal Harbour Seawall",
     description: "Walk right out the convention centre doors along the water toward Stanley Park. Watch the seaplanes take off against the mountain backdrop. One of the best urban walks in the world.",
     neighbourhood: "Coal Harbour",
-    walkTime: "0 min — starts at VCC",
+    walkTime: "Right outside VCC",
     category: "Things to Do",
     url: "https://www.google.com/maps/place/Coal+Harbour+Seawall",
     mapsUrl: "https://www.google.com/maps/place/Coal+Harbour+Seawall,+Vancouver,+BC/"
@@ -312,9 +312,9 @@ export const picks: Pick[] = [
   {
     id: "seabus",
     name: "SeaBus to Lonsdale Quay",
-    description: "Hop on the SeaBus at Canada Place (right outside VCC) for a 12-minute crossing to North Vancouver. The Lonsdale Quay Public Market is charming, the views back across the inlet are spectacular.",
+    description: "Hop on the SeaBus at Canada Place (right outside VCC) for a 12 minute crossing to North Vancouver. The Lonsdale Quay Public Market is charming, the views back across the inlet are spectacular.",
     neighbourhood: "North Vancouver",
-    walkTime: "0 min — boards at VCC",
+    walkTime: "Boards at VCC",
     category: "Things to Do",
     url: "https://www.translink.ca/rider-guide/transit-system/seabus",
     mapsUrl: mapsDir("Lonsdale+Quay+Public+Market,+123+Carrie+Cates+Ct,+North+Vancouver,+BC")
@@ -322,7 +322,7 @@ export const picks: Pick[] = [
   {
     id: "gastown-explore",
     name: "Explore Gastown",
-    description: "Cobblestone streets, Victorian architecture, and great independent boutiques and bars. Yes, the steam clock is touristy — but the neighbourhood genuinely delivers.",
+    description: "Cobblestone streets, Victorian architecture, and great independent boutiques and bars. Yes, the steam clock is touristy. But the neighbourhood genuinely delivers.",
     neighbourhood: "Gastown",
     walkTime: "10 min from VCC",
     category: "Things to Do",
@@ -332,7 +332,7 @@ export const picks: Pick[] = [
   {
     id: "stanley-park",
     name: "Stanley Park Seawall",
-    description: "Rent a bike from Bayshore Rentals and loop the park. Ocean, old-growth forest, Lions Gate Bridge — one of those places that makes you understand why people move to Vancouver.",
+    description: "Rent a bike from Bayshore Rentals and loop the park. Ocean, old growth forest, Lions Gate Bridge. One of those places that makes you understand why people move to Vancouver.",
     neighbourhood: "West End",
     walkTime: "15 min from VCC",
     category: "Things to Do",
@@ -375,7 +375,7 @@ export const picks: Pick[] = [
   {
     id: "blarney-stone",
     name: "Blarney Stone",
-    description: "Vancouver's original Irish pub — loud, fun, and packed most nights. Live music, cold pints, and the kind of crowd that makes the night take on a life of its own.",
+    description: "Vancouver's original Irish pub. Loud, fun, and packed most nights. Live music, cold pints, and the kind of crowd that makes the night take on a life of its own.",
     neighbourhood: "Gastown",
     walkTime: "10 min from VCC",
     category: "Nightlife & After Hours",
@@ -405,7 +405,7 @@ export const picks: Pick[] = [
   {
     id: "keefer-bar",
     name: "The Keefer Bar",
-    description: "Apothecary-inspired cocktails in a dark, moody Chinatown room. Consistently one of the best bars in Canada — the drinks here are genuinely exceptional.",
+    description: "Apothecary inspired cocktails in a dark, moody Chinatown room. Consistently one of the best bars in Canada. The drinks here are genuinely exceptional.",
     neighbourhood: "Chinatown",
     walkTime: "18 min from VCC",
     category: "Nightlife & After Hours",
@@ -413,23 +413,13 @@ export const picks: Pick[] = [
     mapsUrl: mapsDir("The+Keefer+Bar,+135+Keefer+St,+Vancouver,+BC")
   },
   {
-    id: "clough-club",
-    name: "Clough Club",
-    description: "Narrow, dark, atmospheric — a proper Gastown cocktail bar with a speakeasy feel and solid drinks. Great for a late-night debrief.",
-    neighbourhood: "Gastown",
-    walkTime: "12 min from VCC",
-    category: "Nightlife & After Hours",
-    url: "https://www.cloughclub.com",
-    mapsUrl: mapsDir("Clough+Club,+Gastown,+Vancouver,+BC")
-  },
-  {
     id: "greta-yvr",
-    name: "Greta Bar",
-    description: "A high-energy bar and live music venue in the heart of Granville Street. Lively, loud, and exactly what you want when a conference day ends and you just need to cut loose.",
+    name: "Greta YVR",
+    description: "A high energy bar and live music venue in the heart of Granville Street. Lively, loud, and exactly what you want when a conference day ends and you need to cut loose.",
     neighbourhood: "Granville Strip",
     walkTime: "12 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.gretabar.ca",
+    url: "https://gretabar.com/vancouver/",
     mapsUrl: mapsDir("Greta+Bar,+1178+Hamilton+St,+Vancouver,+BC")
   }
 ];
@@ -437,7 +427,7 @@ export const picks: Pick[] = [
 export const tips = [
   {
     title: "Always check the forecast",
-    description: "Vancouver weather is famously unpredictable. Even on a clear sunny morning, light drizzle can roll in by the afternoon. Always check before you head out — a light rain jacket is your best friend here."
+    description: "Vancouver weather is famously unpredictable. Even on a clear sunny morning, light drizzle can roll in by the afternoon. Always check before you head out. A light rain jacket is your best friend here."
   },
   {
     title: "Tap to pay on transit",
@@ -445,7 +435,7 @@ export const tips = [
   },
   {
     title: "VCC has two buildings",
-    description: "Make sure you know if your session is in the East or West building — they're connected, but it's a longer walk between them than you'd expect."
+    description: "Make sure you know if your session is in the East or West building. They're connected, but it's a longer walk between them than you'd expect."
   },
   {
     title: "Tipping",
