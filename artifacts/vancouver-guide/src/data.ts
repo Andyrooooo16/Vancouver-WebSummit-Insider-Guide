@@ -170,6 +170,18 @@ export const picks: Pick[] = [
     url: "https://www.earls.ca",
     mapsUrl: mapsDir("Earls+Kitchen+Bar,+1185+Robson+St,+Vancouver,+BC")
   },
+  {
+    id: "perse-social-corner",
+    name: "Perse Social Corner",
+    description: "A stylish spot for sharing plates and cocktails with a lively, social atmosphere. A great option when you want something more casual but still considered.",
+    neighbourhood: "Downtown",
+    walkTime: "10 min from VCC",
+    category: "Eat & Drink",
+    cuisine: "Canadian",
+    tier: "casual",
+    url: "https://persesocialcorner.com/",
+    mapsUrl: mapsDir("Perse+Social+Corner,+Vancouver,+BC")
+  },
 
   // ── Eat & Drink — Quick Bite ───────────────────────────────────────────────
 
@@ -351,34 +363,44 @@ export const picks: Pick[] = [
   // ── Nightlife & After Hours ────────────────────────────────────────────────
 
   {
-    id: "botanist-bar",
-    name: "Botanist Bar",
-    description: "High-end cocktail theater without leaving the VCC neighbourhood. Brilliant mixology, a beautiful room, and an impressive wine list. The perfect start to the evening.",
-    neighbourhood: "Coal Harbour",
-    walkTime: "2 min from VCC",
+    id: "portside-pub",
+    name: "The Portside Pub",
+    description: "A proper Gastown pub with a great selection of local craft beers, a lively crowd, and an easygoing atmosphere. A reliable first stop after a long conference day.",
+    neighbourhood: "Gastown",
+    walkTime: "10 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://botanistrestaurant.com",
-    mapsUrl: mapsDir("Botanist+Restaurant,+1038+Canada+Pl,+Vancouver,+BC")
+    url: "https://theportsidepub.com/",
+    mapsUrl: mapsDir("The+Portside+Pub,+Gastown,+Vancouver,+BC")
+  },
+  {
+    id: "blarney-stone",
+    name: "Blarney Stone",
+    description: "Vancouver's original Irish pub — loud, fun, and packed most nights. Live music, cold pints, and the kind of crowd that makes the night take on a life of its own.",
+    neighbourhood: "Gastown",
+    walkTime: "10 min from VCC",
+    category: "Nightlife & After Hours",
+    url: "https://blarneystone.ca/",
+    mapsUrl: mapsDir("Blarney+Stone,+216+Carrall+St,+Vancouver,+BC")
   },
   {
     id: "bartholomew",
     name: "Bartholomew",
-    description: "An intimate, beautifully designed cocktail bar in Gastown. Serious drinks, warm atmosphere, and a place that rewards lingering. One of Vancouver's best kept secrets.",
-    neighbourhood: "Gastown",
-    walkTime: "10 min from VCC",
+    description: "An intimate, beautifully designed cocktail bar in Yaletown. Serious drinks, warm atmosphere, and a place that rewards lingering. One of Vancouver's best kept secrets.",
+    neighbourhood: "Yaletown",
+    walkTime: "18 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.bartholomewyvr.com",
-    mapsUrl: mapsDir("Bartholomew,+Gastown,+Vancouver,+BC")
+    url: "https://www.bartholomewbar.com/",
+    mapsUrl: mapsDir("Bartholomew,+Yaletown,+Vancouver,+BC")
   },
   {
-    id: "guilt-and-co",
-    name: "Guilt & Co.",
-    description: "Underground live music venue in Gastown. Intimate, energetic, and great bands most nights. One of those spots that makes you feel like you found something real.",
-    neighbourhood: "Gastown",
-    walkTime: "10 min from VCC",
+    id: "good-co",
+    name: "Good Co.",
+    description: "A fun, unpretentious bar on Granville with strong drinks, a great playlist, and a crowd that's actually there to have a good time. Exactly what you want on a conference night out.",
+    neighbourhood: "Granville Strip",
+    walkTime: "12 min from VCC",
     category: "Nightlife & After Hours",
-    url: "https://www.guiltandco.com",
-    mapsUrl: mapsDir("Guilt+%26+Co,+157+Alexander+St,+Vancouver,+BC")
+    url: "https://goodcobars.com/locations/granville",
+    mapsUrl: mapsDir("Good+Co,+Granville+St,+Vancouver,+BC")
   },
   {
     id: "keefer-bar",
