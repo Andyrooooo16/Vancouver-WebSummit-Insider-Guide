@@ -1,11 +1,12 @@
-import { picks, tips, Category } from "@/data";
+import { picks, tips } from "@/data";
 import { AnimatedCard } from "@/components/animated-card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const eatAndDrink = picks.filter(p => p.category === "Eat & Drink");
+  const splurge = picks.filter(p => p.category === "Eat & Drink" && p.tier === "splurge");
+  const quickBite = picks.filter(p => p.category === "Eat & Drink" && p.tier === "quick-bite");
   const coffee = picks.filter(p => p.category === "Coffee");
   const thingsToDo = picks.filter(p => p.category === "Things to Do");
   const nightlife = picks.filter(p => p.category === "Nightlife & After Hours");
@@ -15,14 +16,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[90vh] min-h-[600px] w-full flex items-end justify-center overflow-hidden pb-24">
         <div className="absolute inset-0 w-full h-full">
-          <img 
-            src="/images/hero.png" 
-            alt="Vancouver skyline at golden hour" 
+          <img
+            src="/images/hero.png"
+            alt="Vancouver skyline at golden hour"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>
-        
+
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -33,7 +34,7 @@ export default function Home() {
               Web Summit 2026
             </Badge>
             <h1 className="text-6xl md:text-8xl font-serif text-foreground mb-6 leading-tight">
-              Vancouver, <br/><span className="text-primary italic">Right Now.</span>
+              Vancouver, <br /><span className="text-primary italic">Right Now.</span>
             </h1>
             <p className="text-lg md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed">
               A curated insider's guide to the city. No tourist traps. Just the real spots a local would send you.
@@ -44,31 +45,46 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="container mx-auto px-6 md:px-12 py-12 md:py-24 max-w-6xl space-y-32">
-        
+
         {/* Eat & Drink */}
         <section>
-          <SectionHeader 
-            title="Eat & Drink" 
-            description="From quick bites between sessions to the finest Pacific Northwest dining."
+          <SectionHeader
+            title="Eat & Drink"
+            description="From a quick bite between sessions to the finest Pacific Northwest dining. All walk times are from the convention centre."
             image="/images/eat.png"
             imageAlt="Moody elegant dining room"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {eatAndDrink.map((pick, i) => (
-              <PickCard key={pick.id} pick={pick} index={i} />
-            ))}
+
+          {/* Splurge tier */}
+          <div className="mt-12">
+            <TierLabel label="Worth the Splurge" description="Sit-down restaurants — book ahead where you can" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+              {splurge.map((pick, i) => (
+                <PickCard key={pick.id} pick={pick} index={i} />
+              ))}
+            </div>
+          </div>
+
+          {/* Quick bite tier */}
+          <div className="mt-14">
+            <TierLabel label="Quick & Good" description="Fast, satisfying, and won't break the bank" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+              {quickBite.map((pick, i) => (
+                <PickCard key={pick.id} pick={pick} index={i} compact />
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Coffee */}
         <section>
-          <SectionHeader 
-            title="Coffee" 
-            description="The fuel. Vancouver takes its roasting seriously. Here are the best spots to recharge."
+          <SectionHeader
+            title="Coffee"
+            description="The fuel. Vancouver takes its roasting seriously — here are the best spots to recharge."
             image="/images/coffee.png"
             imageAlt="Warm artisan coffee shop"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl">
             {coffee.map((pick, i) => (
               <PickCard key={pick.id} pick={pick} index={i} />
             ))}
@@ -77,13 +93,13 @@ export default function Home() {
 
         {/* Things to Do */}
         <section>
-          <SectionHeader 
-            title="Things to Do" 
-            description="Got a couple of hours? Step out of the convention center and experience the city."
+          <SectionHeader
+            title="Things to Do"
+            description="Got a spare hour? Step out of the convention centre and see what makes Vancouver worth moving to."
             image="/images/do.png"
             imageAlt="Lush green seawall"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {thingsToDo.map((pick, i) => (
               <PickCard key={pick.id} pick={pick} index={i} />
             ))}
@@ -92,13 +108,13 @@ export default function Home() {
 
         {/* Nightlife */}
         <section>
-          <SectionHeader 
-            title="Nightlife & After Hours" 
+          <SectionHeader
+            title="Nightlife & After Hours"
             description="Where the conversations continue after the sun goes down."
             image="/images/nightlife.png"
             imageAlt="Moody cocktail bar"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl">
             {nightlife.map((pick, i) => (
               <PickCard key={pick.id} pick={pick} index={i} />
             ))}
@@ -134,7 +150,7 @@ export default function Home() {
   );
 }
 
-function SectionHeader({ title, description, image, imageAlt }: { title: string, description: string, image: string, imageAlt: string }) {
+function SectionHeader({ title, description, image, imageAlt }: { title: string; description: string; image: string; imageAlt: string }) {
   return (
     <AnimatedCard className="flex flex-col md:flex-row gap-8 items-center border-b border-border pb-8">
       <div className="flex-1 space-y-4">
@@ -148,25 +164,52 @@ function SectionHeader({ title, description, image, imageAlt }: { title: string,
   );
 }
 
-function PickCard({ pick, index }: { pick: any, index: number }) {
+function TierLabel({ label, description }: { label: string; description: string }) {
   return (
-    <AnimatedCard delay={index * 0.1} className="group relative bg-card hover:bg-muted/50 border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-md h-full flex flex-col">
-      <div className="mb-4">
-        <h3 className="text-2xl font-serif text-foreground group-hover:text-primary transition-colors">{pick.name}</h3>
-      </div>
-      <p className="text-foreground/80 font-light mb-6 flex-grow leading-relaxed">
-        {pick.description}
-      </p>
-      <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground mt-auto">
-        <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
-          <MapPin className="w-3.5 h-3.5 text-primary" />
-          <span>{pick.neighbourhood}</span>
+    <div className="flex items-baseline gap-4">
+      <h3 className="text-xl font-semibold text-foreground">{label}</h3>
+      <span className="text-sm text-muted-foreground font-light">{description}</span>
+    </div>
+  );
+}
+
+function PickCard({ pick, index, compact = false }: { pick: any; index: number; compact?: boolean }) {
+  return (
+    <AnimatedCard delay={index * 0.08}>
+      <a
+        href={pick.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid={`card-pick-${pick.id}`}
+        className="group relative bg-card hover:bg-muted/40 border border-border/50 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 h-full flex flex-col cursor-pointer block"
+      >
+        <div className="flex items-start justify-between gap-2 mb-3">
+          <h3 className={`font-serif text-foreground group-hover:text-primary transition-colors leading-tight ${compact ? "text-xl" : "text-2xl"}`}>
+            {pick.name}
+          </h3>
+          <ExternalLink className="w-4 h-4 text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-1" />
         </div>
-        <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
-          <Clock className="w-3.5 h-3.5 text-primary" />
-          <span>{pick.walkTime}</span>
+        {!compact && (
+          <p className="text-foreground/75 font-light mb-5 flex-grow leading-relaxed text-sm">
+            {pick.description}
+          </p>
+        )}
+        {compact && (
+          <p className="text-foreground/75 font-light mb-4 flex-grow leading-relaxed text-sm line-clamp-3">
+            {pick.description}
+          </p>
+        )}
+        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground mt-auto">
+          <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
+            <MapPin className="w-3 h-3 text-primary" />
+            <span>{pick.neighbourhood}</span>
+          </div>
+          <div className="flex items-center gap-1.5 bg-background rounded-full px-3 py-1 border border-border/50">
+            <Clock className="w-3 h-3 text-primary" />
+            <span>{pick.walkTime}</span>
+          </div>
         </div>
-      </div>
+      </a>
     </AnimatedCard>
   );
 }
