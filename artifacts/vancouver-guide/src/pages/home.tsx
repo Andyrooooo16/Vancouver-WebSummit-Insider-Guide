@@ -23,14 +23,18 @@ export default function Home() {
         </div>
         <div className="container relative z-10 mx-auto px-6 md:px-12 text-center max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }}>
-            <Badge variant="outline" className="mb-6 border-primary/30 text-primary uppercase tracking-widest text-xs px-4 py-1.5 backdrop-blur-md bg-background/50">
-              Web Summit 2026
-            </Badge>
+            <div className="mb-8 flex justify-center">
+              <img
+                src="/images/websummit.png"
+                alt="Web Summit Vancouver"
+                className="h-16 md:h-20 w-auto rounded-xl shadow-lg"
+              />
+            </div>
             <h1 className="text-6xl md:text-8xl font-serif text-foreground mb-6 leading-tight">
               Vancouver, <br /><span className="text-primary italic">Right Now.</span>
             </h1>
             <p className="text-lg md:text-2xl text-foreground/80 max-w-2xl mx-auto font-light leading-relaxed">
-              A curated insider's guide to the city. No tourist traps. Just the real spots a local would send you.
+              A curated quick guide by a Vancouverite techie hoping you enjoy your stay in his home town.
             </p>
           </motion.div>
         </div>
@@ -143,7 +147,11 @@ export default function Home() {
               <p className="text-sm uppercase tracking-widest text-primary font-semibold mb-2">Your Guide</p>
               <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-4">Andrew Feng</h2>
               <p className="text-foreground/75 font-light leading-relaxed max-w-xl mb-6">
-                Vancouver-based startup operator focused on product and scaling. I've spent years building in this city and genuinely believe there's nowhere better to be right now — this guide is the list I send to every friend visiting for the first time.
+                Born and raised in Vancouver, I've spent years exploring the city while building in the startup and tech space, and I genuinely believe there's nowhere better to be right now. As a Vancouverite, I really see this city emerging as an exciting hub for technology, startups, and ambitious people building new things.
+              <br /><br />
+              These are some of my personal favourite spots and recommendations from years of living here and experiencing the city myself. If you're visiting for Web Summit, I hope this helps you experience a bit of what makes Vancouver special.
+              <br /><br />
+              Feel free to connect with me on LinkedIn — I'd love to hear what you're working on and meet more people building interesting things.
               </p>
               <a
                 href="https://www.linkedin.com/in/andrew-feng/"

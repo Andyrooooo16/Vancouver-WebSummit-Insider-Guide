@@ -387,6 +387,6 @@ export const tips = [
   },
   {
     title: "Tipping",
-    description: "Standard tipping in Vancouver is 15-20% at restaurants and bars. Most terminals default to 18-20%, which is perfectly normal to accept."
+    description: "Standard tipping in Vancouver is 15% and up at restaurants and bars. For larger parties, many restaurants automatically add an 18% gratuity to the bill."
   }
 ];
