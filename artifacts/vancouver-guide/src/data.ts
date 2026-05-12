@@ -241,7 +241,7 @@ export const picks: Pick[] = [
     neighbourhood: "Downtown",
     walkTime: "10 min from VCC",
     category: "Coffee",
-    url: "https://nemesiscoffee.com",
+    url: "https://www.nemesis.coffee/",
     mapsUrl: mapsDir("Nemesis+Coffee,+302+W+Hastings+St,+Vancouver,+BC")
   },
   {
@@ -268,11 +268,11 @@ export const picks: Pick[] = [
     id: "analog",
     name: "Analog Coffee",
     description: "A beloved West End café on Davie Street with serious craft and a relaxed, welcoming vibe. Great single-origin options and a spot where you can actually settle in.",
-    neighbourhood: "West End",
+    neighbourhood: "Yaletown",
     walkTime: "18 min from VCC",
     category: "Coffee",
     url: "https://www.analogcoffee.ca",
-    mapsUrl: mapsDir("Analog+Coffee,+740+Davie+St,+Vancouver,+BC")
+    mapsUrl: mapsDir("Analog+Coffee,+Yaletown,+Vancouver,+BC")
   },
   {
     id: "kafkas",
